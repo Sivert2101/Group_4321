@@ -1,8 +1,9 @@
+/*Make the page flush with the edges of the browser*/
 body {
     padding: 0;
     margin: 0;
 }
-
+/*Create a "standard" layout for website*/
 main{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -11,22 +12,30 @@ main{
     "H H"
     "P I"
     "P I";
+
+    margin-left: 10%;
+    padding: 1px 16px;
+    height: 1000px;
 }
 
+/*Assign all p elements to P grid area*/
 p {
     grid-area: P;
 }
+
+/*Assign all images to I area and set a standard height and with limit*/
 img{
     grid-area: I;
     max-height: 100%;
     max-width: 50%;
     
 }
+/*Assign all h1 elements to H area*/
 h1{
     grid-area: H;
 }
 
-
+/*Set the style for navigation bar to sidebar when the page is wider than specified further down*/
 ul.ul_nav {
     list-style-type: none;
     margin: 0;
@@ -64,12 +73,7 @@ ul.ul_nav li a.active {
     background-color: rgb(108, 113, 116);
 }
 
-main {
-    margin-left: 10%;
-    padding: 1px 16px;
-    height: 1000px;
-}
-
+/*Set the navigation bar to be horizontal when view is no wider than 1300px*/
 @media screen and (max-width: 1300px) {
     ul.ul_nav {
         position: relative;
@@ -97,7 +101,7 @@ main {
         margin-left: 0;
     }
 }
-
+/*Set navigation bar to be vertical when view is no wider than 700px*/
 @media screen and (max-width: 700px) {
 
 
@@ -118,6 +122,7 @@ main {
     }
 }
 
+/*Configure layout for topical page*/
 .grid_container_topical{
     display: grid;
     justify-content: center;
@@ -136,6 +141,8 @@ main {
     "paragraph7 paragraph7 paragraph7";
 
 }
+
+/*Assign all the elements to corresponding grid-area*/
 .paragraph1{   
     grid-area: paragraph1; 
 }  
@@ -156,7 +163,7 @@ main {
 grid-area: intro;
 }
 
-/* List of subheaders (h2)*/
+
 .subheader1{
 grid-area: subheader1;
 }
@@ -177,6 +184,7 @@ grid-area: picture2;
 grid-area: picture3;
 }
 
+/*Configure image size constraints for topical page*/
 .picture1,
 .picture2,
 .picture3{
