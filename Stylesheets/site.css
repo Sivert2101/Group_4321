@@ -3,7 +3,28 @@ body {
     margin: 0;
 }
 
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas: 
+    "H H"
+    "P I"
+    "P I";
+}
 
+p {
+    grid-area: P;
+}
+img{
+    grid-area: I;
+    max-height: 100%;
+    max-width: 50%;
+    
+}
+h1{
+    grid-area: H;
+}
 
 
 ul.ul_nav {
