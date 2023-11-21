@@ -1,4 +1,3 @@
-
 body {
     padding: 0;
     margin: 0;
@@ -16,13 +15,14 @@ ul.ul_nav {
     position: fixed;
     height: 100%;
     overflow: auto;
-  }
+}
 
-  ul.ul_nav li {
+ul.ul_nav li {
     display: block;
-    
+
     border-bottom: 1px solid #bbb;
 }
+
 ul.ul_nav li:last-child {
     border-bottom: none;
 }
@@ -39,7 +39,7 @@ ul.ul_nav a:hover {
     background-color: rgb(85, 94, 97);
 }
 
-ul.ul_nav li a.active{
+ul.ul_nav li a.active {
     background-color: rgb(108, 113, 116);
 }
 
@@ -53,41 +53,43 @@ main {
     ul.ul_nav {
         position: relative;
         width: 100%
-      }
+    }
 
-      ul.ul_nav li {
+    ul.ul_nav li {
         float: left;
         border-bottom: none;
         margin: 0;
         border-right: 1px solid #bbb;
-        
+
     }
+
     ul.ul_nav li:last-child {
         border-right: none;
     }
 
     ul.ul_nav a {
         float: left;
-        
+
     }
 
-    main{
+    main {
         margin-left: 0;
     }
 }
+
 @media screen and (max-width: 700px) {
-    
+
 
     ul.ul_nav li {
         text-align: center;
-        float:none;
+        float: none;
         border-bottom: 1px solid #bbb;
         padding: 0;
     }
 
     ul.ul_nav a {
         text-align: center;
-        float:none;
+        float: none;
     }
 
     ul.ul_nav li:last-child {
