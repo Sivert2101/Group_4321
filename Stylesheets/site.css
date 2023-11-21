@@ -158,7 +158,7 @@ ul.ul_nav li a.active {
     grid-area: paragraph6; 
 }  .paragraph7{   
     grid-area: paragraph7; 
-
+}
 .paragraph1 {
     grid-area: paragraph1;
 }
@@ -194,7 +194,7 @@ ul.ul_nav li a.active {
 /* List of subheaders (h2)*/
 .subheader1 {
     grid-area: subheader1;
-
+}
 .subheader1{
 grid-area: subheader1;
 }
