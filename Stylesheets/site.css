@@ -252,7 +252,7 @@ ul.ul_nav li a.active {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 10% 18% 18% 18% 18% 18% 18%;
+    grid-template-rows: auto;
     grid-template-areas:
         "headline"
         "intro"
@@ -282,6 +282,9 @@ ul.ul_nav li a.active {
     grid-area: test;
 }
 
-.picture {
-    grid-area: picture1;
+.vimg {
+    grid-area: picture;
+    max-height: 100%;
+    max-width: 100%;
+
 }
