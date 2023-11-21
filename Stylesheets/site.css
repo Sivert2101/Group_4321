@@ -96,3 +96,76 @@ main {
         border-bottom: none;
     }
 }
+
+.grid_container_topical{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,1);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "intro intro intro"
+    "paragraph1 paragraph1 paragraph1"
+    "subheader1 subheader1 subheader1"
+    "paragraph2 paragraph2 paragraph2"
+    "paragraph3 paragraph3 paragraph3"
+    "picture1 paragraph4 paragraph4"
+    "subheader2 subheader2 subheader2"
+    "paragraph5 paragraph5 paragraph5"
+    "paragraph6 paragraph6 picture2"
+    "paragraph7 paragraph7 paragraph7";
+
+}
+.paragraph1{   
+    grid-area: paragraph1; 
+}  
+.paragraph2{   
+    grid-area: paragraph2; 
+}  .paragraph3{   
+    grid-area: paragraph3; 
+}  .paragraph4{   
+    grid-area: paragraph4; 
+}  .paragraph5{   
+    grid-area: paragraph5; 
+}  .paragraph6{   
+    grid-area: paragraph6; 
+}  .paragraph7{   
+    grid-area: paragraph7; 
+}
+.intro{
+grid-area: intro;
+}
+
+/* List of subheaders (h2)*/
+.subheader1{
+grid-area: subheader1;
+}
+
+.subheader2{
+grid-area: subheader2;
+}
+
+.picture1{
+grid-area: picture1;
+}
+
+.picture2{
+grid-area: picture2;
+}
+
+.picture3{
+grid-area: picture3;
+}
+
+.picture1,
+.picture2,
+.picture3{
+  margin: auto;
+}
+
+.picture1 > img,
+.picture2 > img,
+.picture3 > img{
+  width: 100%;
+  max-width: 100px;
+  
+}
