@@ -3,15 +3,16 @@ body {
     padding: 0;
     margin: 0;
 }
+
 /*Create a "standard" layout for website*/
-main{
+main {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 45% 45%;
-    grid-template-areas: 
-    "H H"
-    "P I"
-    "P I";
+    grid-template-areas:
+        "H H"
+        "P I"
+        "P I";
 
     margin-left: 10%;
     padding: 1px 16px;
@@ -24,14 +25,15 @@ p {
 }
 
 /*Assign all images to I area and set a standard height and with limit*/
-img{
+img {
     grid-area: I;
     max-height: 100%;
     max-width: 50%;
 
 }
+
 /*Assign all h1 elements to H area*/
-h1{
+h1 {
     grid-area: H;
 }
 
@@ -101,6 +103,7 @@ ul.ul_nav li a.active {
         margin-left: 0;
     }
 }
+
 /*Set navigation bar to be vertical when view is no wider than 700px*/
 @media screen and (max-width: 700px) {
 
@@ -123,7 +126,7 @@ ul.ul_nav li a.active {
 }
 
 /*Configure layout for topical page*/
-.grid_container_topical{
+.grid_container_topical {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
@@ -143,22 +146,34 @@ ul.ul_nav li a.active {
 }
 
 /*Assign all the elements to corresponding grid-area*/
-.paragraph1{   
-    grid-area: paragraph1; 
-}  
-.paragraph2{   
-    grid-area: paragraph2; 
-}  .paragraph3{   
-    grid-area: paragraph3; 
-}  .paragraph4{   
-    grid-area: paragraph4; 
-}  .paragraph5{   
-    grid-area: paragraph5; 
-}  .paragraph6{   
-    grid-area: paragraph6; 
-}  .paragraph7{   
-    grid-area: paragraph7; 
+.paragraph1 {
+    grid-area: paragraph1;
 }
+
+.paragraph2 {
+    grid-area: paragraph2;
+}
+
+.paragraph3 {
+    grid-area: paragraph3;
+}
+
+.paragraph4 {
+    grid-area: paragraph4;
+}
+
+.paragraph5 {
+    grid-area: paragraph5;
+}
+
+.paragraph6 {
+    grid-area: paragraph6;
+}
+
+.paragraph7 {
+    grid-area: paragraph7;
+}
+
 .paragraph1 {
     grid-area: paragraph1;
 }
@@ -195,8 +210,9 @@ ul.ul_nav li a.active {
 .subheader1 {
     grid-area: subheader1;
 }
-.subheader1{
-grid-area: subheader1;
+
+.subheader1 {
+    grid-area: subheader1;
 }
 
 .subheader2 {
@@ -240,10 +256,10 @@ grid-area: subheader1;
     grid-template-areas:
         "headline"
         "intro"
-        "picture1"
-        "impairments"
-        "picture2"
-        "sight";
+        "picture"
+        "accessibility"
+        "sight"
+        "test";
 }
 
 .headline {
@@ -254,10 +270,18 @@ grid-area: subheader1;
     grid-area: intro;
 }
 
-.impairments {
-    grid-area: impairments;
+.accessibility {
+    grid-area: accessibility;
 }
 
 .sight {
     grid-area: sight;
+}
+
+.test {
+    grid-area: test;
+}
+
+.picture {
+    grid-area: picture1;
 }
